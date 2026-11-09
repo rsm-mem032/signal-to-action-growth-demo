@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Signal-to-Action Growth Demo</title>
+    <meta
+      name="description"
+      content="A reusable AI-assisted growth demo template for turning fragmented community signals into qualified opportunities and human-reviewed actions."
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero">
+        <div class="eyebrow" id="eyebrow"></div>
+        <div class="hero-topbar">
+          <div class="brand-lockup">
+            <div class="brand-mark" id="brandMark"></div>
+            <div>
+              <p class="brand-name" id="brandName"></p>
+              <p class="brand-sub" id="brandSub"></p>
+            </div>
+          </div>
+          <div class="status-pill" id="statusPill"></div>
+        </div>
+
+        <div class="hero-copy">
+          <div class="hero-main">
+            <h1 id="heroTitle"></h1>
+            <p class="hero-description" id="heroDescription"></p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#dashboard" id="primaryCta"></a>
+              <a class="button button-secondary" href="#workflow" id="secondaryCta"></a>
+            </div>
+          </div>
+          <div class="hero-side">
+            <div class="hero-card">
+              <span id="heroCardLabel"></span>
+              <p id="heroCardBody"></p>
+            </div>
+          </div>
+        </div>
+
+        <section class="stats-grid" id="summaryCards"></section>
+      </header>
+
+      <main>
+        <section class="section two-column">
+          <div class="section-heading">
+            <span class="section-kicker" id="whyKicker"></span>
+            <h2 id="whyTitle"></h2>
+          </div>
+          <div class="challenge-grid" id="challengeGrid"></div>
+        </section>
+
+        <section class="section dashboard-section" id="dashboard">
+          <div class="section-heading section-heading-row">
+            <div>
+              <span class="section-kicker" id="dashboardKicker"></span>
+              <h2 id="dashboardTitle"></h2>
+            </div>
+            <div class="action-stack">
+              <button class="button button-ghost" id="scanButton"></button>
+              <button class="button button-secondary" id="exportButton"></button>
+            </div>
+          </div>
+
+          <div class="dashboard-shell">
+            <div class="metrics-grid" id="metricGrid"></div>
+
+            <div class="dashboard-toolbar">
+              <div class="tabs" id="tabs"></div>
+              <div class="toolbar-note" id="toolbarNote"></div>
+            </div>
+
+            <div class="card-list" id="opportunityList"></div>
+          </div>
+        </section>
+
+        <section class="section" id="workflow">
+          <div class="section-heading">
+            <span class="section-kicker" id="workflowKicker"></span>
+            <h2 id="workflowTitle"></h2>
+          </div>
+          <div class="workflow-grid" id="workflowGrid"></div>
+        </section>
+
+        <section class="section">
+          <div class="section-heading">
+            <span class="section-kicker" id="examplesKicker"></span>
+            <h2 id="examplesTitle"></h2>
+          </div>
+          <div class="example-grid" id="exampleGrid"></div>
+        </section>
+
+        <section class="section takeaway-grid">
+          <article class="takeaway-panel">
+            <span class="section-kicker" id="decisionsKicker"></span>
+            <ul class="decision-list" id="decisionList"></ul>
+          </article>
+          <article class="takeaway-panel">
+            <span class="section-kicker" id="takeawayKicker"></span>
+            <p class="takeaway-copy" id="takeawayCopy"></p>
+            <div class="tag-row" id="tagRow"></div>
+          </article>
+        </section>
+      </main>
+    </div>
+
+    <div class="toast" id="toast"></div>
+    <script src="./app.js"></script>
+  </body>
+</html>
